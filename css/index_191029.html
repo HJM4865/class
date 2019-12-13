@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="webstoryboy">
+    <meta name="description" content="웹 퍼블리셔를 위한 정보 공유 사이트입니다.">
+    <meta name="keywords" content="웹스토리보이, 웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, webstoryboy, publisher, css3, html, markup, design, Webstoryboy">
+    <title>함주미 | Hamjumi | LAYOUT</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/docs.min.css" rel="stylesheet">
+    <link href="../assets/css/prism.css" rel="stylesheet">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon_114.png">
+    <link rel="icon" href="../assets/ico/icon.png">
+    <link rel="icon" href="../assets/ico/favicon_57.png" sizes="16x16">
+    <link rel="icon" href="../assets/ico/favicon_72.png" sizes="32x32">
+    <link rel="icon" href="../assets/ico/favicon_114.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon_114.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon_114.png" sizes="128x128">
+
+    <!-- Facebook meta tags -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="http://richclub8.dothome.co.kr/assets/ico/icon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <!-- twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="http://richclub8.dothome.co.kr/assets/ico/icon.png" />
+
+    <!-- 웹 폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.../assets2/js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <a class="sr-only" href="#content">Skip to main content</a>
+
+    <header class="navbar navbar-inverse navbar-static-top bs-docs-nav" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="../index.html" class="navbar-brand">HJM &lt;/doc&gt;</a>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse pull-right" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="https://wiss.tistory.com/">Design</a></li>
+                    <li><a href="https://webzz.tistory.com/">Coding</a></li>
+                    <li><a href="https://wtss.tistory.com/">Tutor</a></li>
+                    <li><a href="https://wess.tistory.com/">Edu</a></li>
+                    <li><a href="https://wsss.tistory.com/">CSS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bs-header bgs1" id="content">
+        <div class="container">
+            <h1>LAYOUT Reference v1.0 &lt;/doc&gt;</h1>
+            <p><a href="http://wnal27.dothome.co.kr/" target="_blank">wnal27.dothome.co.kr</a></p>
+        </div>
+    </div>
+
+    <div class="container bs-docs-container">
+        <div class="row">
+
+            <div class="col-md-9" role="main">
+
+                <!-- Intro1 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro1" class="page-header">CSS</h2>
+                    <p class="bs-callout bs-callout-info">CSS(Cascading Style Sheets)는 HTML로 작성돤 문서를 쓰기위한 스타일 시트 언어입니다.</p>
+                    <p>HTML은 문서의 골격을 이룬다면 CSS는 그 골격에 맞는 디자인 작업 언어라고 생각하면 됩니다.</p>
+                </div>
+                <!-- //Intro1 -->
+
+                <!-- Intro2 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro2" class="page-header">CSS 선택자</h2>
+                    <p class="bs-callout bs-callout-info">CSS 선택자를 통해 요소를 선택하고 속성을 줄 수 있습니다.</p>
+
+                    <h3>기본 선택자</h3>
+                    <div class="table-reponsive">
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>종류</th>
+                                    <th>예시</th>
+                                    <th>이름</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>태그 선택자</td>
+                                    <td>p {color: #fff}</td>
+                                    <td>p태그를 선택해서 글씨 색을 하얀색으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>클래스</td>
+                                    <td>.class {color: #fff}</td>
+                                    <td>class 클래서를 선택하여 글씨 색을 하얀색으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>아이디 선택자</td>
+                                    <td>#id {color: #fff}</td>
+                                    <td>id를 선택하여 글씨 색을 하얀색으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>그룹 선택자</td>
+                                    <td>p, #id {color: #fff}</td>
+                                    <td>p 태그와 id를 선택하여 글씨 색을 하얀색으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>전체 선택자</td>
+                                    <td>* {color: #fff}</td>
+                                    <td>전체 태그를 선택하여 글씨 색을 하얀색으로 설정합니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul>
+                            <li>id 선택자
+                                <ol>
+                                    <li>하나의 태그만 식별하기 위한 선태자입니다.</li>
+                                    <li>하나의 태그에서 하나만 사용할 수 있습니다.</li>
+                                    <li>"#"으로 표시합니다.</li>
+                                </ol>
+                            </li>
+                            <li>class 선택자
+                                <ol>
+                                    <li>여러개의 태그를 식별하기 위한 선택자입니다.</li>
+                                    <li>하나의 태그에서 여러개를 사용할 수 있습니다.</li>
+                                    <li>"."으로 표시합니다.</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h3>링크 가상 클래스</h3>
+                    <div class="table-reponsive">
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>종류</th>
+                                    <th>예시</th>
+                                    <th>이름</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>:link</td>
+                                    <td>a:link {color: #fff}</td>
+                                    <td>방문하지 않은 링크의 글씨 색을 하얀색으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>:visted</td>
+                                    <td>a:vistedk {color: #fff}</td>
+                                    <td>방문한 링크의 글씨 색을 하얀색으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>:hover</td>
+                                    <td>a:hover {color: #fff}</td>
+                                    <td>링크 위에 마우스를 올려 놓았을 경우 글씨 색을 하얀색으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>:active</td>
+                                    <td>active {color: #fff}</td>
+                                    <td>링크가 활성화되었을 경우 글씨 색을 하얀색으로 설정합니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>폼 관련 선택자</h3>
+                    <div class="table-reponsive">
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>종류</th>
+                                    <th>예시</th>
+                                    <th>이름</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>:checked</td>
+                                    <td>input:checked {color: #fff}</td>
+                                    <td>input 태그가 체크되었을 때 글씨 색을 하얀색으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>:focus</td>
+                                    <td>input:focus {color: #fff}</td>
+                                    <td>태그에 초점이 맞추어 졌을 때 글씨 색을 하얀색으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>:enabled</td>
+                                    <td>input:enabled {color: #fff}</td>
+                                    <td>input 태그가 사용 가능하면 글씨 색을 하얀색으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>:disabled</td>
+                                    <td>a:disabled {color: #fff}</td>
+                                    <td>input 태그가 사용 가능하지 않으면 글씨 색을 하얀색으로 설정합니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <!-- //Intro2 -->
+
+                <!-- Intro3 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro3" class="page-header">CSS 색상</h2>
+                    <p class="bs-callout bs-callout-info">CSS를 통해 색상을 표현하는 방법은 4가지가 있습니다.</p>
+                    <h4>16 진수 표기법</h4>
+                    <p>웹 문서에서 색상을 표현하는 방법은 16진수로 표현하는 방법입니다. 두자리씩 묶어서 #RRGGBB 형식으로 표현하며, RR은 빨간색, GG는 초록색, BB는 파란색의 양을 표현합니다. 각 색상의 하나도 섞이지 않았음은 00부터 가득 섞였음은 FF까지 사용할 수 있습니다.</p>
+
+                    <h4 class="pt30">RGB와 RGBA</h4>
+                    <p>웹 문서에서 색상을 표현하는 rgb(255,255,255)는 십진수를 이용하여 표현합니다. 색이 하나도 섞이지 않았을 때에는 0으로 표시하고 가득 섞였을 때에는 255로 표현합니다. 숫자는 색상의 양을 나타내고 a는 투명도(alpha)를 나타냅니다. 투명도 0과 1사이로 표현합니다.</p>
+
+                    <h4 class="pt30">HSL와 HSLA</h4>
+                    <p>웹 문서에서 색상을 표현하는 HSL은 색상(hue), 채도(saturation), 밝기(lightness)를 나타냅니다. 색상은 둥글게 배치한 색상환으로 표시하고 0도와 360도에는 빨간색, 120도애는 초록색, 240도에는 파란색이 배치됩니다. 채도가 0%이면 회색톤, 100%이면 순백으로 표시됩니다. 밝기는 0%에서는 가장 어둡고 100%에서는 가장 밝습니다. </p>
+
+                    <h4 class="pt30">색상 이름 표가법</h4>
+                    <p>색상 이름을 이용하여 색을 표현할 수 있습니다. 가장 기본적인 16가지를 포함하여 216가지의 색상 이름 표기법이 있습니다.</p>
+                    <p class="bs-callout bs-callout-info">auqa, black, blue, fnchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, yellow</p>
+                </div>
+                <!-- //Intro3 -->
+
+                <!-- Intro4 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro4" class="page-header">벡터(Vector)</h2>
+                    <p class="bs-callout bs-callout-info">벡터 방식은 점과 점을 연결함으로써 수학적 함수관계에 의해 이미지를 표현하여 선과 면을 만들어 냅니다.</p>
+                    <ul>
+                        <li>자유롭게 확대하거나 축소해도 해상도에 영향받지 않는다.</li>
+                        <li>용량 사용이 많지 않다.</li>
+                        <li>사진이나 이미지처럼 정교한 그래픽 표현에는 한계가 있다.</li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="#" class="thumbnail">
+                                <img src="../assets/img/study06.jpg" alt="벡터">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- //Intro4 -->
+
+                <!-- Intro5 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro5" class="page-header">비트맵(Bitmap)</h2>
+                    <p class="bs-callout bs-callout-info">비트맵은 '비트의 지도(map of bits)라는 뜻으로, 픽셀에 저장된 비트 정보가 집합된 것 입니다.</p>
+
+                    <ul>
+                        <li>많은 픽셀로 정교하고, 다양한 색상을 가진 이미지를 만들수 있다.</li>
+                        <li>이미지를 확대하고 축소할 수는 있지만, 깨짐 현상과 이미지 품질이 저하된다.</li>
+                    </ul>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="#" class="thumbnail">
+                                <img src="../assets/img/study05.jpg" alt="비트맵">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro5 -->
+
+                <!-- Intro6 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro6" class="page-header">CSS 선언</h2>
+                    <p class="bs-callout bs-callout-info">HTML 문서에 스타일 선언하는 방법은 3가지 방법이 있습니다.</p>
+                    <ul>
+                        <li>내부 스타일(Internal Style Sheet) : head 태그 안에 선언하는 방법</li>
+                        <li>외부 스타일(External Style Sheet) : 외부 파일로 연결하는 방법</li>
+                        <li>인라인 스타일(Inline Style Sheet) : 태그에 직접 연결하는 방법</li>
+                    </ul>
+                    <pre class="line-numbers language-markup"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    
+    &lt;!-- 내부 스타일 --&gt;
+    &lt;style&gt;
+        h1{color: #fff;}
+    &lt;/style&gt;
+    
+    &lt;!-- 외부 스타일 --&gt;
+    &lt;link rel="stylesheet" href="경로"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!--인라인 스타일--&gt;
+    &lt;h1 style="color: #fff;"&gt;  &lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                </div>
+                <!-- //Intro6 -->
+
+                <!-- Intro7 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro7" class="page-header">상대주소 절대주소</h2>
+                    <p class="bs-callout bs-callout-info">이미지 또는 파일의 경로를 설정하는 방법은 상대주소와 절대주소가 있습니다.</p>
+                    <ul>
+                        <li>상대주소</li>
+                        <ol>
+                            <li>상대경로는 이미지를 삽입할 HTML 문서를 기준으로 경로를 인식하는 방법입니다.</li>
+                            <li>이미지 파일이 HTML 문서와 같은 폴더에 있는지, 상위 폴더에 있는지, 하위 폴더에 있는지를 따져보고 경로를 지정해줘야 합니다.</li>
+                        </ol>
+                        <li>절대주소</li>
+                        <ol>
+                            <li>이미지의 절대적인 경로로 지정하는 방식입니다.</li>
+                            <li>절대경로는 고유한 경로입니다.</li>
+                        </ol>
+                    </ul>
+                    <pre class="line-numbers language-markup"><code>&lt;img src="http://www.homejjang.com/images/tree00.gif&gt;
+<img src="c:home\images\tree00.gif">
+</code></pre>
+                </div>
+                <!-- //Intro7 -->
+
+                <!-- Intro8 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro8" class="page-header">이미지 표현 방법</h2>
+                    <p class="bs-callout bs-callout-info">웹 문서에 이미지를 표현하는 방법은 img 태그와 background를 통해 설정할 수 있습니다.
+                        <ul>
+                            <li>img 태그로 표현하는 방법 : 이미지가 의미가 있는 경우(로고)
+                                <div>
+                                    <img src="../assets/img/a.png" alt="a">
+                                    <img src="../assets/img/b.png" alt="b">
+                                    <img src="../assets/img/c.png" alt="c">
+                                </div>
+                            </li>
+                            <li>background로 표현하는 방법 : 이미지가 의미가 없는 경우(장식)
+                                <div>
+                                    <span style="display: inline-block; width: 60px; height: 60px; background: url(../assets/img/a.png)"></span>
+                                    <span style="display: inline-block; width: 60px; height: 60px; background: url(../assets/img/b.png)"></span>
+                                    <span style="display: inline-block; width: 60px; height: 60px; background: url(../assets/img/c.png)"></span>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+                <!-- //Intro8 -->
+
+                <!-- Intro8 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro9" class="page-header">이미지 스프라이트</h2>
+                    <p class="bs-callout bs-callout-info">아이콘 또는 장식을 위한 이미지요소들은 스프라이트 기법을 활용하여 파일의 사이즈를 최소화하고 효율성을 높일 수 있습니다.</p>
+                    <ul>
+                        <li>여러번의 서버 요청을 한 번으로 줄일 수 가 있습니다.</li>
+                        <li>이미지 수정이나 관리가 간편합니다.</li>
+                        <li>웹 접근성을 준수하기 위해서 IR효과를 설정해야 합니다.</li>
+                        <li>
+                            <div>
+                                <span style="display: inline-block; width: 60px; height: 60px; background-image: url(../assets/img/abc.png)"></span>
+                                <span style="display: inline-block; width: 60px; height: 60px; background-image: url(../assets/img/abc.png); background-position: 0 -60px;"></span>
+                                <span style="display: inline-block; width: 60px; height: 60px; background-image: url(../assets/img/abc.png); background-position: 0 -120px;"></span>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- //Intro8 -->
+
+
+                <!-- Intro9 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro9" class="page-header">이미지 스프라이트</h2>
+                    <p class="bs-callout bs-callout-info">아이콘 또는 장식을 위한 이미지요소들은 스프라이트 기법을 활용하여 파일의 사이즈를 최소화하고 효율성을 높일 수 있습니다.</p>
+                    <ul>
+                        <li>여러번의 서버 요청을 한 번으로 줄일 수 가 있습니다.</li>
+                        <li>이미지 수정이나 관리가 간편합니다.</li>
+                        <li>웹 접근성을 준수하기 위해서 IR효과를 설정해야 합니다.</li>
+                        <li>
+                            <div>
+                                <span style="display: inline-block; width: 60px; height: 60px; background-image: url(../assets/img/abc.png)"></span>
+                                <span style="display: inline-block; width: 60px; height: 60px; background-image: url(../assets/img/abc.png); background-position: 0 -60px;"></span>
+                                <span style="display: inline-block; width: 60px; height: 60px; background-image: url(../assets/img/abc.png); background-position: 0 -120px;"></span>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- //Intro9 -->
+
+                <!-- Intro10 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro10" class="page-header">IR 효과</h2>
+                    <p class="bs-callout bs-callout-info">IR기법은 이미지 대체 텍스트를 제공하기 위한 CSS기법으로 다양한 CSS기법을 사용하여 이미지 대체 텍스트를 제공할 수 있습니다.</p>
+
+                    <h3 class="pt30">Phark Method</h3>
+                    <p>Phark Method : 의미있는 이미지의 대체 텍스트를 제공하는 경우 : 이미지로 대체할 엘리먼트에 배경이미지를 설정하고 글자는 text-undent를 이용하여 화면 바깥으로 빼내어 보이지 않게 하는 방법</p>
+                    <div class="table-reponsive">
+                        <table class="table table-bordered table-striped table-hover">
+                            <colgroup>
+                                <col style="width: 40%">
+                                <col style="width: 30%">
+                                <col style="width: 30%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>항목</th>
+                                    <th>장점</th>
+                                    <th>단점</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>스크린 리더가 읽어 줌</td>
+                                    <td class="ce">O</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>추가적인 태그 사용 안함</td>
+                                    <td class="ce">O</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>CSS on / Image off시 텍스트 안보임</td>
+                                    <td></td>
+                                    <td class="ce">O</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 class="pt30">PWA IR</h3>
+                    <p>의미 있는 이미지의 대체 텍스트로 이미지를 off시에도 대체 텍스트를 보여주고자 할 때 : 이미지로 대체할 엘리먼드에 배경미지를 설정하고 글자는 span 태그로 감싼 후 <code>z-index: -1;</code>을 이용하여 화면에 안보이게 처리하는 방법</p>
+                    <div class="table-reponsive">
+                        <table class="table table-bordered table-striped table-hover">
+                            <colgroup>
+                                <col style="width: 40%">
+                                <col style="width: 30%">
+                                <col style="width: 30%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>항목</th>
+                                    <th>장점</th>
+                                    <th>단점</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>스크린 리더가 읽어 줌</td>
+                                    <td class="ce">O</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>추가적인 태그 사용</td>
+                                    <td></td>
+                                    <td class="ce">O</td>
+                                </tr>
+                                <tr>
+                                    <td>CSS on / Image off시 텍스트 보임</td>
+                                    <td class="ce">O</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>postion 속성 사용(성능 관련 이슈)</td>
+                                    <td></td>
+                                    <td class="ce">O</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <h3 class="pt30">Screen Out</h3>
+                    <p>대체 텍스트가 아닌 접근성을 위한 숨긴 텍스트를 제공할 때 사용합니다.</p>
+                </div>
+                <!-- //Intro10 -->
+
+                <!-- Intro11 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro11" class="page-header">이미지타입 선택</h2>
+                    <p class="bs-callout bs-callout-info">프로젝트 종류에 따른 이미지 타입표</p>
+                    <div class="table-reponsive">
+                        <table class="table table-bordered table-striped table-hover">
+
+                            <thead>
+                                <tr>
+                                    <th>종류</th>
+                                    <th>Pc web</th>
+                                    <th>Mobile Wpp</th>
+                                    <th>Mobile App</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GIF</td>
+                                    <td>기본</td>
+                                    <td>사용가능</td>
+                                    <td>X</td>
+                                </tr>
+                                <tr>
+                                    <td>JPG</td>
+                                    <td>컬러수 많거나 운영성 이미지일 때</td>
+                                    <td>운영섯 이미지일 때</td>
+                                    <td>X</td>
+                                </tr>
+                                <tr>
+                                    <td>PNG-8</td>
+                                    <td>X</td>
+                                    <td>기본</td>
+                                    <td>반투명효과 없고 컬러가 적을 때</td>
+                                </tr>
+                                <tr>
+                                    <td>PNG-24</td>
+                                    <td>반투명효과가 있을 때에만 사용</td>
+                                    <td>컬러 수 많거나 반투명 효과가 있을 때</td>
+                                    <td>기본</td>
+                                </tr>
+                                <tr>
+                                    <td>이미지 스프라이트</td>
+                                    <td>O</td>
+                                    <td>O</td>
+                                    <td>X</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3 class="pt20">PC Web</h3>
+                        <ul>
+                            <li>기본 포맷은 GIF를 사용한다.</li>
+                            <li>JPG는 인물이나 실사 이미지와 같이, 색 변화 및 그라데이션이 풍부한 경우 및 운영성 이미지에 주로 사용한다.
+                            </li>
+                            <li>
+                                <ol>
+                                    <li>일반 저장 시(File->Save) : 압축률 10/12 이상으로 저장할 것.</li>
+                                    <li>Save for web 기준 : Original 혹은 JPG Quality 90 이상</li>
+                                </ol>
+                            </li>
+                            <li>구형브라우저에서의 PNG 이미지 지원</li>
+                        </ul>
+                        <h3 class="pt20">PC Web</h3>
+                        <li>3G망을 이용하는 유저를 고려하여 용량 축소가 중요하다.</li>
+                        <li>PNG-8 포맷을 기본으로 저장하며, 색상 수가 많거나 반투명 효과가 있으면 PNG-24를 사용한다.</li>
+                        <li>용량 대비 이미지 품질을 고려하여 포맷을 변경할 수도 있다.</li>
+                    </div>
+
+                </div>
+                <!-- //Intro11 -->
+
+                <!-- Intro12 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro12" class="page-header">이미지 스프라이트</h2>
+                    <p class="bs-callout bs-callout-info">아이콘 또는 장식을 위한 이미지요소들은 스프라이트 기법을 활용하여 파일의 사이즈를 최소화하고 효율성을 높일 수 있습니다.</p>
+                    <ul>
+                        <li>여러번의 서버 요청을 한 번으로 줄일 수 가 있습니다.</li>
+                        <li>이미지 수정이나 관리가 간편합니다.</li>
+                        <li>웹 접근성을 준수하기 위해서 IR효과를 설정해야 합니다.</li>
+                        <li>
+                            <div>
+                                <span style="display: inline-block; width: 60px; height: 60px; background-image: url(../assets/img/abc.png)"></span>
+                                <span style="display: inline-block; width: 60px; height: 60px; background-image: url(../assets/img/abc.png); background-position: 0 -60px;"></span>
+                                <span style="display: inline-block; width: 60px; height: 60px; background-image: url(../assets/img/abc.png); background-position: 0 -120px;"></span>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- //Intro12 -->
+                <!-- Intro12 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro12" class="page-header">float: left인한 영역 깨짐 방지법</h2>
+                    <p class="bs-callout bs-callout-info">float을 쓰게되면 영역의 높이 값이 0으로 줄어듥시 때문에 영역을 유지 하는 방법이 필요합니다.</p>
+                    <ol>
+                        <li>깨지는 영역에 똑같이 float: left를 사용합니다.(X) 모든 영역에 float 사용하게 되고 정확하게 깨지는 영역을 알 수가 없습니다.</li>
+                        <li>float의 성질을 차단하는 clear: both를 사용합니다..(X) 깨지는 영역을 정확히 알 수 가 없습니다.</li>
+                        <li>float을 사용한 부모 박스 영역에 overflow:hidden을 사용합니다.(△)</li>
+                        <li>clearfix를 사용하여 가상의 영역을 만들어줍니다.(O)</li>
+                    </ol>
+                </div>
+                <!-- //Intro12 -->
+
+                <!-- Intro12 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro12" class="page-header">float: left인한 영역 깨짐 방지법</h2>
+                    <p class="bs-callout bs-callout-info">float을 쓰게되면 영역의 높이 값이 0으로 줄어듥시 때문에 영역을 유지 하는 방법이 필요합니다.</p>
+                    <ol>
+                        <li>깨지는 영역에 똑같이 float: left를 사용합니다.(X) 모든 영역에 float 사용하게 되고 정확하게 깨지는 영역을 알 수가 없습니다.</li>
+                        <li>float의 성질을 차단하는 clear: both를 사용합니다..(X) 깨지는 영역을 정확히 알 수 가 없습니다.</li>
+                        <li>float을 사용한 부모 박스 영역에 overflow:hidden을 사용합니다.(△)</li>
+                        <li>clearfix를 사용하여 가상의 영역을 만들어줍니다.(O)</li>
+                    </ol>
+                </div>
+                <!-- //Intro12 -->
+
+                <!-- Intro13 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro13" class="page-header">float: left인한 영역 깨짐 방지법</h2>
+                    <p class="bs-callout bs-callout-info">float을 쓰게되면 영역의 높이 값이 0으로 줄어듥시 때문에 영역을 유지 하는 방법이 필요합니다.</p>
+                    <ol>
+                        <li>깨지는 영역에 똑같이 float: left를 사용합니다.(X) 모든 영역에 float 사용하게 되고 정확하게 깨지는 영역을 알 수가 없습니다.</li>
+                        <li>float의 성질을 차단하는 clear: both를 사용합니다..(X) 깨지는 영역을 정확히 알 수 가 없습니다.</li>
+                        <li>float을 사용한 부모 박스 영역에 overflow:hidden을 사용합니다.(△)</li>
+                        <li>clearfix를 사용하여 가상의 영역을 만들어줍니다.(O)</li>
+                    </ol>
+                </div>
+                <!-- //Intro13 -->
+
+
+            </div>
+            <!-- //col-md-9 -->
+
+
+            <!-- //col-md-3 -->
+            <div class="col-md-3">
+                <div class="bs-sidebar hidden-print" role="complementary">
+                    <ul class="nav bs-sidenav">
+                        <li><a href="#intro1">ㅇㅇ</a></li>
+                        <li><a href="#intro2">ㅇㅇ</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <!--//col-md-3 -->
+        </div>
+        <!-- //row -->
+    </div>
+    <!-- //container -->
+
+
+    <!-- Footer -->
+    <footer class="bs-footer" role="contentinfo">
+        <div class="container">
+            <ul class="footer-links muted">
+                <li>Currently v2.0</li>
+                <li>&middot;</li>
+                <li><a href="https://webstoryboy.github.io/w9/html/">webstoryboy</a></li>
+                <li>&middot;</li>
+                <li><a href="http://cafe.naver.com/crossbrowsing" target="_blank">publisher cafe</a></li>
+                <li>&middot;</li>
+                <li><a href="http://cafe.daum.net/flairdesignlink" target="_blank">designer cafe</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- //Footer -->
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../assets/js/jquery-1.9.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/docs.min.js"></script>
+    <script src="../assets/js/prism.js"></script>
+</body></html>

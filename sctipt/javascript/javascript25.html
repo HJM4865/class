@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <script>
+        //while문을 이용해서 1부터 20까지 출력
+        //숫자 1
+        //숫자 2
+        //숫자 .....
+        //숫자 20
+        let num = 0; 
+        while( num < 20 ){
+            num++;
+            document.write("숫자 " + num,"<br>")
+        }
+        document.write("<br><br>")
+
+
+        //for문을 이용해서 1~20까지 출력
+        //숫자 1
+        //숫자 2
+        //숫자 .....
+        //숫자 20
+        for(var i=1; i<=20; i++){
+            document.write("숫자 " + i,"<br>")
+        }
+        document.write("<br><br>")
+
+        //break문과 continue문
+        var count = 0;
+        while(true){
+            count++;
+            if( count == 3){
+                continue;
+            }
+            document.write("카운트 " + count, "<br>");
+            if( count > 19){
+                break;
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
